@@ -1,8 +1,8 @@
 {
   "/_not-found/page": "/_not-found",
-  "/tags/page": "/tags",
   "/analytics/page": "/analytics",
-  "/focus/page": "/focus",
   "/page": "/",
-  "/tasks/page": "/tasks"
+  "/tasks/page": "/tasks",
+  "/tags/page": "/tags",
+  "/focus/page": "/focus"
 }
