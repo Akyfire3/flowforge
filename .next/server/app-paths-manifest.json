@@ -1,0 +1,7 @@
+{
+  "/page": "app/page.js",
+  "/focus/page": "app/focus/page.js",
+  "/tasks/page": "app/tasks/page.js",
+  "/analytics/page": "app/analytics/page.js",
+  "/tags/page": "app/tags/page.js"
+}
