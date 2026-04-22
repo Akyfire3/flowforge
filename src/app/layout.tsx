@@ -4,6 +4,7 @@ import "./globals.css";
 import { Sidebar } from "@/components/Sidebar";
 import { MiniTimer } from "@/components/MiniTimer";
 import { AppDataProvider } from "@/lib/context";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,6 +39,15 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={`${inter.className} bg-[#121212] text-white min-h-screen flex overflow-hidden`}>
         <AppDataProvider>
+          <Script id="register-sw" strategy="afterInteractive">
+            {`
+              if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                  navigator.serviceWorker.register('/sw.js');
+                });
+              }
+            `}
+          </Script>
           <Sidebar />
           <main className="flex-1 h-screen overflow-y-auto bg-[#121212] p-8">
             <div className="max-w-6xl mx-auto">
