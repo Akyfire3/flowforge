@@ -1,23 +1,13 @@
 {
-  "id": "/",
   "name": "FlowForge",
   "short_name": "FlowForge",
-  "description": "A high-performance dark-themed productivity and focus app designed for deep work.",
+  "description": "A high-performance dark-themed productivity and focus app.",
   "start_url": "/",
   "display": "standalone",
-  "display_override": [
-    "window-controls-overlay",
-    "standalone"
-  ],
   "background_color": "#111111",
   "theme_color": "#111111",
   "orientation": "any",
-  "categories": [
-    "productivity",
-    "utilities"
-  ],
-  "lang": "en-US",
-  "dir": "ltr",
+  "id": "/",
   "icons": [
     {
       "src": "/icon-192x192.png",
@@ -37,15 +27,13 @@
       "src": "/screenshot-wide.png",
       "sizes": "1280x720",
       "type": "image/png",
-      "form_factor": "wide",
-      "label": "FlowForge Desktop View"
+      "form_factor": "wide"
     },
     {
       "src": "/screenshot-narrow.png",
       "sizes": "750x1334",
       "type": "image/png",
-      "form_factor": "narrow",
-      "label": "FlowForge Mobile View"
+      "form_factor": "narrow"
     }
   ]
 }
